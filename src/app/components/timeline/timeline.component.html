@@ -1,5 +1,45 @@
-<div class="timeline" [attr.id]="'plan'">
-  <app-element
+  <div class="timeline" [attr.id]="'plan'">
+    <ul>
+      <li>
+        <div class="content">
+          <h3>Wyjazd z Oleśnicy</h3>
+          <p>Rozkład jazdy autobusu można znaleźć <a [routerLink]="'.'" [fragment]="'bus'">tutaj</a>.</p>
+        </div>
+        <div class="time">
+          <h4>13:00</h4>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h3>Ślub w kościele</h3>
+          <p>Uroczystość odbędzie się w kościele wnmp na Ołtaszynie</p>
+        </div>
+        <div class="time">
+          <h4>15:00</h4>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h3>Wesele</h3>
+          <p>Wesele odbędzie się na zamku Topacz.</p>
+        </div>
+        <div class="time">
+          <h4>16:30</h4>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h3>Powrót do Oleśnicy</h3>
+          <p>Rozkład jazdy autobusu można znaleźć <a [routerLink]="'.'" [fragment]="'bus'">tutaj</a>.</p>
+        </div>
+        <div class="time">
+          <h4>4:10</h4>
+        </div>
+      </li>
+      <div style="clear:both;"></div>
+    </ul>
+  </div>
+  <!-- <app-element
     title="ślub"
     time="15:00"
     mapLink="https://www.openstreetmap.org/?mlat=51.05707&mlon=17.02327#map=19/51.05707/17.02327&layers=N"
@@ -9,6 +49,5 @@
     title="wesele"
     time="16:30"
     mapLink="https://www.openstreetmap.org/?mlat=51.03400&mlon=16.99143#map=19/51.03400/16.99143&layers=N"
-  ></app-element>
-</div>
+  ></app-element> -->
 <app-map></app-map>
