@@ -1,7 +1,14 @@
-<div class="timeline">
-
-  <app-element title="ślub" time="15:00" mapLink="https://www.openstreetmap.org/?mlat=51.05707&mlon=17.02327#map=19/51.05707/17.02327&layers=N"></app-element>
+<div class="timeline" [attr.id]="'info'">
+  <app-element
+    title="ślub"
+    time="15:00"
+    mapLink="https://www.openstreetmap.org/?mlat=51.05707&mlon=17.02327#map=19/51.05707/17.02327&layers=N"
+  ></app-element>
   <div class="vl"></div>
-  <app-element title="wesele" time="16:30" mapLink="https://www.openstreetmap.org/?mlat=51.03400&mlon=16.99143#map=19/51.03400/16.99143&layers=N"></app-element>
+  <app-element
+    title="wesele"
+    time="16:30"
+    mapLink="https://www.openstreetmap.org/?mlat=51.03400&mlon=16.99143#map=19/51.03400/16.99143&layers=N"
+  ></app-element>
 </div>
 <app-map></app-map>
