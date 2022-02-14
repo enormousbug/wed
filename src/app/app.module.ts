@@ -10,6 +10,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ElementComponent } from './components/timeline/element/element.component';
 import { MapComponent } from './components/timeline/map/map.component';
 import { HomeComponent } from './components/home/home.component';
+import { RsvpComponent } from './components/rsvp/rsvp.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './components/home/home.component';
     ContactComponent,
     ElementComponent,
     MapComponent,
-    HomeComponent
+    HomeComponent,
+    RsvpComponent
   ],
   imports: [
     BrowserModule,
