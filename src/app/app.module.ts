@@ -7,6 +7,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { InfoComponent } from './components/info/info.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ElementComponent } from './components/timeline/element/element.component';
+import { MapComponent } from './components/timeline/map/map.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ContactComponent } from './components/contact/contact.component';
     MenuComponent,
     TimelineComponent,
     InfoComponent,
-    ContactComponent
+    ContactComponent,
+    ElementComponent,
+    MapComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
