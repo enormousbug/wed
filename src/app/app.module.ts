@@ -11,6 +11,8 @@ import { ElementComponent } from './components/timeline/element/element.componen
 import { MapComponent } from './components/map/map.component';
 import { HomeComponent } from './components/home/home.component';
 import { RsvpComponent } from './components/rsvp/rsvp.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -23,13 +25,15 @@ import { RsvpComponent } from './components/rsvp/rsvp.component';
     MapComponent,
     HomeComponent,
     RsvpComponent,
-    MapComponent
+    MapComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
