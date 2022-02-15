@@ -1,3 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Taviraj:wght@200&display=swap");
+
+picture {
+  display: block;
+  max-height: 170px;
+}
+
+.background {
+  width: 100%;
+}
+
 .header {
   text-align: center;
+
+}
+
+h1 {
+  margin-top: 0px;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: -40px !important;
+}
+
+h1,
+h2 {
+  font-family: "Taviraj";
+  color: #565458;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
