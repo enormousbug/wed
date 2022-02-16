@@ -1,10 +1,22 @@
-<h1 [attr.id]="'contact'">Kontakt</h1>
-<ul>
-  <li>
-    Karolina +420771212115
-  </li>
-  <li>
-    Michał +420771212113
-  </li>
-</ul>
-<button routerLink="/rsvp" routerLinkActive="activebutton">Potwierdź przybycie!</button>
+<div class="contact">
+  <h1 [attr.id]="'contact'">Kontakt</h1>
+  <button
+    mat-raised-button
+    class="rsvp"
+    color="primary"
+    routerLink="/rsvp"
+    routerLinkActive="activebutton"
+  >
+    Potwierdź przybycie
+  </button>
+  <div>
+    <h3>Karolina</h3>
+    <p>(+420) 771-212-115</p>
+    <p>we.wesele1@gmail.com</p>
+  </div>
+  <div>
+    <h3>Michał</h3>
+    <p>(+420) 771-212-113</p>
+    <p>we.wesele1@gmail.com</p>
+  </div>
+</div>
