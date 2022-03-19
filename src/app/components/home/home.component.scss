@@ -1,0 +1,11 @@
+p {
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+@media (max-width: 767px) {
+  p {
+    margin: 0;
+  }
+}
