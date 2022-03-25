@@ -27,14 +27,14 @@ export class MapComponent implements OnInit {
         }),
       ],
       view: new View({
-        center: ol.fromLonLat([17.00726, 51.04564]),
+        center: ol.fromLonLat([16.97962, 51.03698]),
         zoom: 13,
       }),
       controls: [],
     });
 
     let church = new Feature({
-      geometry: new Point(ol.fromLonLat([17.02328, 51.05707])),
+      geometry: new Point(ol.fromLonLat([16.96799, 51.03975])),
     });
     let party = new Feature({
       geometry: new Point(ol.fromLonLat([16.99124, 51.03421])),
