@@ -1,25 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import emailjs, {EmailJSResponseStatus} from '@emailjs/browser';
 
 @Component({
+  selector: 'contact-us',
   templateUrl: './rsvp.component.html',
   styleUrls: ['./rsvp.component.scss']
 })
-export class RsvpComponent implements OnInit {
-  //nodemailer = require("nodemailer");
-  constructor() { }
+export class RsvpComponent {
+  token: string|undefined;
 
-  ngOnInit(): void {
+  constructor() {
+    this.token = undefined;
   }
 
-  onSubmit() {
-    // Email.send({
-    //   Host: 'smtp.elasticemail.com',
-    //   Username: 'new.guest@weselekarolinyimichala.fun',
-    //   Password: '5ECF2ECC68A800A7C487C505F0A9EE3EB84C',
-    //   To: 'we.wesele1@gmail.com',
-    //   From: 'new.guest@weselekarolinyimichala.fun',
-    //   Subject: 'GuestConfirmation',
-    //   Body: ''
-    // });
+  public sendEmail(e:Event) {
+    e.preventDefault();
+    emailjs.sendForm('service_d4zyj89','template_t6uxz7c',e.target as HTMLFormElement, 'mtStKdBXy_FwuXuNk',)
+      .catch(error => console.error(error))
+      .finally(()=>{})
   }
 }
