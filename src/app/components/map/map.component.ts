@@ -66,3 +66,4 @@ export class MapComponent implements OnInit {
     this.map.addLayer(markers);
   }
 }
+//
