@@ -1,2 +1,18 @@
-<p>rsvp works!</p>
-<button (click)="onSubmit()">SEND</button>
+<div class="contact-page">
+  <form class="contact-form" (submit)="sendEmail($event)" #form="ngForm">
+    <div>
+      <label>Spis osób potwierdzających przybycie</label>
+      <input type="text" name="from_name" placeholder="Spis osób..." required>
+    </div>
+    <div>
+      <label>Wiadomość</label>
+      <textarea name="message" placeholder="Tu możecie zostawić krótką wiadomość dla nas..." maxlength="200"></textarea>
+    </div>
+    <re-captcha id="recaptcha" name="recaptcha" #recaptcha="ngModel" [(ngModel)]="token" required [class.is-invalid]="recaptcha.invalid && (recaptcha.dirty || recaptcha.touched)"></re-captcha>
+    <div *ngIf="recaptcha.invalid && (recaptcha.dirty || recaptcha.touched)" class="invalid-feedback">
+      <div *ngIf="recaptcha.errors?.['required']">This field is required.</div>
+    </div>
+    <input type="submit" value="Wyślij potwierdzenie">
+  </form>
+<!--  <mat-spinner class="contact-loader"></mat-spinner>-->
+</div>
