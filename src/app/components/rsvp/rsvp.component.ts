@@ -15,7 +15,7 @@ export class RsvpComponent {
 
   public sendEmail(e:Event) {
     e.preventDefault();
-    emailjs.sendForm('service_d4zyj89','template_t6uxz7c',e.target as HTMLFormElement, 'mtStKdBXy_FwuXuNk',)
+    emailjs.sendForm('service_d4zyj89','template_t6uxz7c',e.target as HTMLFormElement, 'mtStKdBXy_FwuXuNk')
       .catch(error => console.error(error))
       .finally(()=>{})
   }
