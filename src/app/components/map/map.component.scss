@@ -1,5 +1,5 @@
 #wedding_map {
-  height: 400px;
+  height: 600px;
   width: 60%;
   margin: 0 auto;
   display: flex;
@@ -8,5 +8,20 @@
 @media (max-width: 767px) {
   #wedding_map {
     width: auto;
+  }
+}
+
+.castle_map {
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+}
+
+
+@media (max-width: 767px) {
+  .castle_map {
+    height: auto;
+    width: 100%;
   }
 }
