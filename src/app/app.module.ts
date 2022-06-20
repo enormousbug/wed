@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { RsvpComponent } from './components/rsvp/rsvp.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { SomethingNewComponent } from './components/something-new/something-new.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { MatButtonModule } from '@angular/material/button';
     HomeComponent,
     RsvpComponent,
     MapComponent,
+    SomethingNewComponent,
   ],
   imports: [
     BrowserModule,
