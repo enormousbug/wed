@@ -1,0 +1,23 @@
+p {
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.ty {
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  p {
+    margin: 0;
+  }
+
+  .ty {
+    height: auto;
+    width: 100%;
+  }
+}
